@@ -1,0 +1,16 @@
+.foot {
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 1vh;
+}
+
+.foot div a {
+  text-decoration: none;
+}
+
+.foot div a:hover {
+  text-decoration: underline;
+}

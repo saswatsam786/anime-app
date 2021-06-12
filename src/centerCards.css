@@ -1,0 +1,47 @@
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 13vh;
+  overflow-y: hidden;
+}
+#card {
+  position: relative;
+  height: 50vh;
+  width: 40rem;
+  max-width: 85vw;
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+  box-shadow: 8px 5px 6px 6px rgb(128 128 128 / 64%);
+  overflow-y: hidden;
+  border: 1px solid black;
+}
+
+#card h3 {
+  color: #fffffff6;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.swipe {
+  position: absolute;
+}
+
+.card {
+  animation: transitionLeft 2.5s;
+}
+
+@keyframes transitionLeft {
+  0% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}

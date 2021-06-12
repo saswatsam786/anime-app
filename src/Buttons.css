@@ -1,0 +1,126 @@
+.buttons {
+  position: absolute;
+  bottom: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+
+.buttons .MuiIconButton-root {
+  background-color: white;
+  box-shadow: 0px 10px 53px 0px rgba(0, 0, 0, 0.3);
+}
+
+.replayIcon {
+  color: orange !important;
+}
+
+.leftIcon {
+  color: red !important;
+}
+
+.rightIcon {
+  color: blue !important;
+}
+
+.favIcon {
+  color: rgb(253, 152, 169) !important;
+}
+
+.handIcon {
+  color: springgreen !important;
+}
+
+.likeFeature {
+  z-index: 1;
+  opacity: 1;
+  color: black;
+}
+
+.contain {
+  display: flex;
+  justify-content: center;
+}
+
+#clapDisplay {
+  visibility: hidden;
+  position: absolute;
+  width: 20em;
+}
+
+#laughDisplay {
+  visibility: hidden;
+  position: absolute;
+  width: 20em;
+}
+
+#likeDisplay {
+  visibility: hidden;
+  position: absolute;
+}
+
+#crossDisplay {
+  visibility: hidden;
+  display: inline;
+  position: absolute;
+  width: 20em;
+}
+
+.centerCards {
+  animation: transitionUpDown 3.5s;
+}
+
+@keyframes transitionUpDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+    transform: rotateX(-30deg);
+    transform: rotateY(-30deg);
+  }
+
+  25% {
+    opacity: 0.25;
+    transform: translateY(30px);
+    transform: rotateX(30deg);
+    transform: rotateY(30deg);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translateY(-30px);
+    transform: rotateX(-30deg);
+    transform: rotateY(-30deg);
+  }
+
+  75% {
+    opacity: 0.75;
+    transform: translateY(30px);
+    transform: rotateX(30deg);
+    transform: rotateY(30deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+    transform: rotateX(0deg);
+    transform: rotateY(0deg);
+  }
+}
+
+/* #likeDisplay {
+  visibility: hidden;
+  position: absolute;
+  left: 40rem;
+  align-items: center;
+  z-index: 103;
+  bottom: 7rem;
+}
+
+#crossDisplay {
+  visibility: hidden;
+  position: absolute;
+  bottom: 175px;
+  left: 500px;
+  overflow: hidden;
+} */
